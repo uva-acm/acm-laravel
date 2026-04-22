@@ -252,4 +252,9 @@ Route::middleware(['auth', EnsureUserIsAdmin::class])->group(function () {
     Route::post('/admin/tokens', [AdminController::class, 'createToken'])->name('admin.tokens.create');
     Route::delete('/admin/tokens/{token}', [AdminController::class, 'deleteToken'])->name('admin.tokens.destroy');
 
-}); 
+});
+
+// POTY routes
+Route::get('/poty/{year}', function ($year) {
+    return view('poty', $year);
+})->name('poty');
