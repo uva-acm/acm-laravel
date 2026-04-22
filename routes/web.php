@@ -256,5 +256,5 @@ Route::middleware(['auth', EnsureUserIsAdmin::class])->group(function () {
 
 // POTY routes
 Route::get('/poty/{year}', function ($year) {
-    return view('poty', $year);
+    return view('poty.poty_' . $year);
 })->name('poty');
