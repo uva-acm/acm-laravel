@@ -96,6 +96,8 @@
                     <div class="collapse-content text-sm">
                         <p>Past scoreboards are available for the following HSPC events:</p>
                         <ul>
+                            <li><a href="/scoreboards/2026-d1">2026 (Div. 1)</a></li>
+                            <li><a href="/scoreboards/2026-d2">2026 (Div. 2)</a></li>
                             <li><a href="/scoreboards/2025">2025</a></li>
                             <li><a href="/scoreboards/2024">2024</a></li>
                             <li><a href="/scoreboards/2023">2023</a></li>
