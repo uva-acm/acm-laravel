@@ -57,6 +57,8 @@
                     <div class="collapse-content text-sm">
                         <p>You can read past problem sets (PDF) and see full solutions with sample and judge input/output (zip) here:</p>
                         <ul class="list-unstyled">
+                            <li>2026 Div. 1 (<a href="/data/2026-d1-contest.pdf">problems</a>)&nbsp;(<a href="/data/2026-d1-solutions.pdf">solutions</a>)</li>
+                            <li>2026 Div. 2 (<a href="/data/2026-d2-contest.pdf">problems</a>)&nbsp;(<a href="/data/2026-d2-solutions.pdf">solutions</a>)</li>
                             <li>2025 (<a href="/data/2025-problems.zip">zip</a>)&nbsp;(<a href="/data/2025-contest.pdf">pdf</a>)</li>
                             <li>2024 (zip coming soon)&nbsp;(<a href="/data/2024-contest.pdf">pdf</a>)</li>
                             <li>2023 (zip coming soon)&nbsp;(<a href="/data/2023-contest.pdf">pdf</a>)</li>
@@ -168,4 +170,4 @@
             </div>
         </div>
     </div>
-@endsection 
+@endsection
