@@ -62,7 +62,7 @@ class UserController extends Controller
         
         $validated = $request->validate([
             'bio' => 'nullable|string|max:1000',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:' . FileHelper::getMaxUploadSizeKB()
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:' . FileHelper::getMaxUploadSizeKB()
         ]);
         
         if ($request->hasFile('image')) {

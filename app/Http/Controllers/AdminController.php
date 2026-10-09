@@ -94,7 +94,7 @@ class AdminController extends Controller
             'is_admin' => 'boolean',
             'hidden' => 'boolean',
             'bio' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:' . FileHelper::getMaxUploadSizeKB()
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:' . FileHelper::getMaxUploadSizeKB()
         ]);
 
         $validated['password'] = bcrypt($validated['password']);
@@ -117,7 +117,7 @@ class AdminController extends Controller
             'is_admin' => 'boolean',
             'hidden' => 'boolean',
             'bio' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:' . FileHelper::getMaxUploadSizeKB()
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:' . FileHelper::getMaxUploadSizeKB()
         ]);
 
         if ($request->hasFile('image')) {
@@ -365,7 +365,7 @@ class AdminController extends Controller
             'is_admin' => 'boolean',
             'hidden' => 'boolean',
             'bio' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:' . FileHelper::getMaxUploadSizeKB()
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:' . FileHelper::getMaxUploadSizeKB()
         ]);
 
         $validated['password'] = bcrypt($validated['password']);
@@ -526,4 +526,4 @@ class AdminController extends Controller
     }
 
 
-} 
+}
