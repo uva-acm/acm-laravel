@@ -48,9 +48,9 @@
                 <legend class="fieldset-legend">Profile Media</legend>
                 
                 <label class="label">Profile Image (Optional)</label>
-                <input type="file" name="image" class="file-input file-input-bordered" accept="image/jpeg,image/png,image/gif,image/webp">
+                <input type="file" name="image" class="file-input file-input-bordered" accept="image/*">
                 <div class="label">
-                    <span class="label-text-alt text-base-content/60">JPEG, PNG, GIF, or WebP. Maximum file size: @maxUploadSize</span>
+                    <span class="label-text-alt text-base-content/60">Maximum file size: @maxUploadSize</span>
                 </div>
             </fieldset>
             
@@ -88,4 +88,4 @@ function editUser(userId) {
             alert('Error loading user data');
         });
 }
-</script>
+</script> 

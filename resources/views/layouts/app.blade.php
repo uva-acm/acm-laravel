@@ -95,19 +95,6 @@
             </div>
         @endif
 
-        @if($errors->any())
-            <div class="alert alert-error mb-6" role="alert">
-                <div>
-                    <p class="font-semibold">The changes could not be saved:</p>
-                    <ul class="list-disc pl-5">
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-        @endif
-
         @yield('content')
         </div>
     </main>
@@ -136,4 +123,4 @@
 
     @stack('scripts')
 </body>
-</html>
+</html> 

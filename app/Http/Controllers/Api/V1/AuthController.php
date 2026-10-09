@@ -83,7 +83,7 @@ class AuthController extends ApiController
     public function uploadAvatar(Request $request): JsonResponse
     {
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:' . FileHelper::getMaxUploadSizeKB()
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:' . FileHelper::getMaxUploadSizeKB()
         ]);
 
         $user = $request->user();
