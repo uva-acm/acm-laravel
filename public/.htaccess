@@ -19,3 +19,11 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+# Allow profile and event image uploads up to 10 MB. The POST limit is
+# slightly larger to leave room for the rest of the multipart form data.
+<IfModule php_module>
+    php_value upload_max_filesize 10M
+    php_value post_max_size 12M
+    php_value memory_limit 256M
+</IfModule>
